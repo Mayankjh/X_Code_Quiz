@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="card text-center" id="info" style="visibility: visible;">
+  <!-- <div class="card text-center" id="info" style="visibility: visible;">
     <div class="card-header">
       Featured
     </div>
@@ -26,27 +26,63 @@
         <option value="Easy">Easy</option>
         <option value="Moderate">Moderate</option>
         <option value="Expert">Expert</option> <br>
-        <!-- <option value="audi">Audi</option> -->
+       
       </select> <br><br>
       <a href="#" class="btn btn-primary" data-toggle="modal" onclick="start()" data-target="#exampleModal">START
         GAME</a>
     </div>
     <div class="card-footer text-muted">
     </div>
+  </div> -->
+  <!-- <div class="container-fluid" id="info" style="display: block;">
+      <div class="row">
+          <div class="col-12 p-0">
+              <div class="jumbotron min-vh-100 text-center m-0 info d-flex flex-column justify-content-center">
+                  <h1 class="display-4" style="color: aliceblue">Quiz Game Guess word</h1>
+                  <p class="lead"style="color: aliceblue">Dare To Win!!</p>
+                  <p class="lead">
+                      <input  type="text" id="name" placeholder="Name"  required> <br>
+                      <input type="number" id="age" placeholder="Age" required><br>
+                          
+                      <select id="level">
+                          <option value="Easy">Easy</option>
+                          <option value="Moderate">Moderate</option>
+                          <option value="Expert">Expert</option> <br>
+                         
+                        </select> <br><br>
+                        <input type="submit" id="start" onclick="start()" value="Start Quiz">
+                    
+                      
+                  
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div> -->
+
+  <div class="container-fluid" id="quit" style="display: none;">
+      <div class="row">
+          <div class="col-12 p-0">
+              <div class="jumbotron min-vh-100 text-center m-0 info d-flex flex-column justify-content-center">
+                  <center style="color:black"><h1 >Hi,&nbsp;<a id="hi"></a><br><br>Your Score is <br><br><i><h3 id="score"></h3></i></h1>
+              </div>
+          </div>
+      </div>
   </div>
-
-
   <div id="Easy" style="display:none;">
+      <div class="jumbotron" style="background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);">
+          <div class="container">
+          <center><h1 >Hi,&nbsp;<a id="hi"></a><br><br>Welcome To Quiz</h1>
+          </center>
+          </div>
+      </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
-      <!-- <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol> -->
-      <div class="carousel-inner">
+<div class="carousel-inner">
         <div class="carousel-item active">
-          <div>
-            <p>Q1.&nbsp;&nbsp;what is the capital of India.</p>
+          <div class="container-fluid bg-2 text-center">
+            <br>
+            <br>
+            <h3 class="margin">Q1.&nbsp;&nbsp;what is the capital of India.</h3>
             <p id="ans1" hidden>DELHI</p>
             <div id="E1">_ _ _ _ _</div><br><br>
           <div>
@@ -77,12 +113,16 @@
             <button onclick="hit('E1', 'ans1','Y')">Y</button>
             <button onclick="hit('E1', 'ans1','Z')">Z</button>
       
-          </div><br><br>
+          </div><br>
+          <br>
           </div>
+  
         </div>
         <div class="carousel-item">
-          <div>
-            <p>Q2.&nbsp;&nbsp;what is the capital of Haryana.</p>
+          <div class="container-fluid bg-2 text-center">
+              <br>
+              <br>
+            <h3>Q2.&nbsp;&nbsp;what is the capital of Haryana.</h3>
             <p id="ans2" hidden>CHANDIGARH</p>
             <div id="E2">_ _ _ _ _ _ _ _ _ _</div><br><br>
           <div>
@@ -116,8 +156,10 @@
           </div><br><br>
           </div>        </div>
         <div class="carousel-item">
-          <div>
-            <p>Q3.&nbsp;&nbsp;what is the capital of Bihar.</p>
+          <div class="container-fluid bg-2 text-center">
+              <br>
+              <br>
+            <h3>Q3.&nbsp;&nbsp;what is the capital of Bihar.</h3>
             <p id="ans3" hidden>PATNA</p>
             <div id="E3">_ _ _ _ _</div><br><br>
           <div>
@@ -147,8 +189,7 @@
             <button onclick="hit('E3', 'ans3','X')">X</button>
             <button onclick="hit('E3', 'ans3','Y')">Y</button>
             <button onclick="hit('E3', 'ans3','Z')">Z</button>
-      
-          </div><br><br>
+       </div><br><br>
           </div>         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -163,32 +204,283 @@
     </div>
  
 
-
-
-
-  <!-- Modal -->
-  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button onclick="hit('E1', 'ans1','A')" type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-      </div>
-      <div class="modal-footer">
-        <button onclick="hit('E1', 'ans1','A')" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button onclick="hit('E1', 'ans1','A')" type="button" class="btn btn-primary">Save changes</button>
-      </div>
+<!-- **************** Moderate *************************** -->
+<div id="Moderate" style="display:block;">
+    <div class="jumbotron" style="background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);">
+        <div class="container">
+        <center><h1 >Hi,&nbsp;<a id="hi"></a><br><br>Welcome To Quiz</h1>
+        </center>
+        </div>
     </div>
+  <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
+<div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container-fluid bg-2 text-center">
+          <br>
+          <br>
+          <h3 class="margin">Q1.&nbsp;&nbsp;what is the capital of India.</h3>
+          <p id="mans1" hidden>DELHI</p>
+          <div id="M1">_ _ _ _ _</div><br><br>
+        <div>
+          <button onclick="hit('M1', 'mans1','A')">A</button>
+          <button onclick="hit('M1', 'mans1','B')">B</button>
+          <button onclick="hit('M1', 'mans1','C')">C</button>
+          <button onclick="hit('M1', 'mans1','D')">D</button>
+          <button onclick="hit('M1', 'mans1','E')">E</button>
+          <button onclick="hit('M1', 'mans1','F')">F</button>
+          <button onclick="hit('M1', 'mans1','G')">G</button>
+          <button onclick="hit('M1', 'mans1','H')">H</button>
+          <button onclick="hit('M1', 'mans1','I')">I</button>
+          <button onclick="hit('M1', 'mans1','J')">J</button>
+          <button onclick="hit('M1', 'mans1','K')">K</button>
+          <button onclick="hit('M1', 'mans1','L')">L</button>
+          <button onclick="hit('M1', 'mans1','M')">M</button>
+          <button onclick="hit('M1', 'mans1','N')">N</button>
+          <button onclick="hit('M1', 'mans1','O')">O</button>
+          <button onclick="hit('M1', 'mans1','P')">P</button>
+          <button onclick="hit('M1', 'mans1','Q')">Q</button>
+          <button onclick="hit('M1', 'mans1','R')">R</button>
+          <button onclick="hit('M1', 'mans1','S')">S</button>
+          <button onclick="hit('M1', 'mans1','T')">T</button>
+          <button onclick="hit('M1', 'mans1','U')">U</button>
+          <button onclick="hit('M1', 'mans1','V')">V</button>
+          <button onclick="hit('M1', 'mans1','W')">W</button>
+          <button onclick="hit('M1', 'mans1','X')">X</button>
+          <button onclick="hit('M1', 'mans1','Y')">Y</button>
+          <button onclick="hit('M1', 'mans1','Z')">Z</button>
+    
+        </div><br>
+        <br>
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <div class="container-fluid bg-2 text-center">
+            <br>
+            <br>
+          <h3>Q2.&nbsp;&nbsp;what is the capital of Haryana.</h3>
+          <p id="mans2" hidden>CHANDIGARH</p>
+          <div id="M2">_ _ _ _ _ _ _ _ _ _</div><br><br>
+        <div>
+          <button onclick="hit('M2', 'mans2','A')">A</button>
+          <button onclick="hit('M2', 'mans2','B')">B</button>
+          <button onclick="hit('M2', 'mans2','C')">C</button>
+          <button onclick="hit('M2', 'mans2','D')">D</button>
+          <button onclick="hit('M2', 'mans2','E')">E</button>
+          <button onclick="hit('M2', 'mans2','F')">F</button>
+          <button onclick="hit('M2', 'mans2','G')">G</button>
+          <button onclick="hit('M2', 'mans2','H')">H</button>
+          <button onclick="hit('M2', 'mans2','I')">I</button>
+          <button onclick="hit('M2', 'mans2','J')">J</button>
+          <button onclick="hit('M2', 'mans2','K')">K</button>
+          <button onclick="hit('M2', 'mans2','L')">L</button>
+          <button onclick="hit('M2', 'mans2','M')">M</button>
+          <button onclick="hit('M2', 'mans2','N')">N</button>
+          <button onclick="hit('M2', 'mans2','O')">O</button>
+          <button onclick="hit('M2', 'mans2','P')">P</button>
+          <button onclick="hit('M2', 'mans2','Q')">Q</button>
+          <button onclick="hit('M2', 'mans2','R')">R</button>
+          <button onclick="hit('M2', 'mans2','S')">S</button>
+          <button onclick="hit('M2', 'mans2','T')">T</button>
+          <button onclick="hit('M2', 'mans2','U')">U</button>
+          <button onclick="hit('M2', 'mans2','V')">V</button>
+          <button onclick="hit('M2', 'mans2','W')">W</button>
+          <button onclick="hit('M2', 'mans2','X')">X</button>
+          <button onclick="hit('M2', 'mans2','Y')">Y</button>
+          <button onclick="hit('M2', 'mans2','Z')">Z</button>
+    
+        </div><br><br>
+        </div>        </div>
+      <div class="carousel-item">
+        <div class="container-fluid bg-2 text-center">
+            <br>
+            <br>
+          <h3>Q3.&nbsp;&nbsp;what is the capital of Bihar.</h3>
+          <p id="mans3" hidden>PATNA</p>
+          <div id="M3">_ _ _ _ _</div><br><br>
+        <div>
+          <button onclick="hit('M3', 'mans3','A')">A</button>
+          <button onclick="hit('M3', 'mans3','B')">B</button>
+          <button onclick="hit('M3', 'mans3','C')">C</button>
+          <button onclick="hit('M3', 'mans3','D')">D</button>
+          <button onclick="hit('M3', 'mans3','E')">E</button>
+          <button onclick="hit('M3', 'mans3','F')">F</button>
+          <button onclick="hit('M3', 'mans3','G')">G</button>
+          <button onclick="hit('M3', 'mans3','H')">H</button>
+          <button onclick="hit('M3', 'mans3','I')">I</button>
+          <button onclick="hit('M3', 'mans3','J')">J</button>
+          <button onclick="hit('M3', 'mans3','K')">K</button>
+          <button onclick="hit('M3', 'mans3','L')">L</button>
+          <button onclick="hit('M3', 'mans3','M')">M</button>
+          <button onclick="hit('M3', 'mans3','N')">N</button>
+          <button onclick="hit('M3', 'mans3','O')">O</button>
+          <button onclick="hit('M3', 'mans3','P')">P</button>
+          <button onclick="hit('M3', 'mans3','Q')">Q</button>
+          <button onclick="hit('M3', 'mans3','R')">R</button>
+          <button onclick="hit('M3', 'mans3','S')">S</button>
+          <button onclick="hit('M3', 'mans3','T')">T</button>
+          <button onclick="hit('M3', 'mans3','U')">U</button>
+          <button onclick="hit('M3', 'mans3','V')">V</button>
+          <button onclick="hit('M3', 'mans3','W')">W</button>
+          <button onclick="hit('M3', 'mans3','X')">X</button>
+          <button onclick="hit('M3', 'mans3','Y')">Y</button>
+          <button onclick="hit('M3', 'mans3','Z')">Z</button>
+     </div><br><br>
+        </div>         </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <button class="btn btn-success quit" onclick="quit()">Submit</button> 
   </div>
-</div> -->
-  <!-- <input class="form-control" type="text" placeholder="Default input" required> -->
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  </div>
+
+  
+    <!-- ************** Expert ***************** -->
+    <div id="Expert" style="display:none;">
+        <div class="jumbotron" style="background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);">
+            <div class="container">
+            <center><h1 >Hi,&nbsp;<a id="hi"></a><br><br>Welcome To Quiz</h1>
+            </center>
+            </div>
+        </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
+  <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid bg-2 text-center">
+              <br>
+              <br>
+              <h3 class="margin">Q1.&nbsp;&nbsp;what is the capital of India.</h3>
+              <p id="Eans1" hidden>DELHI</p>
+              <div id="Ex1">_ _ _ _ _</div><br><br>
+            <div>
+              <button onclick="hit('Ex1', 'Eans1','A')">A</button>
+              <button onclick="hit('Ex1', 'Eans1','B')">B</button>
+              <button onclick="hit('Ex1', 'Eans1','C')">C</button>
+              <button onclick="hit('Ex1', 'Eans1','D')">D</button>
+              <button onclick="hit('Ex1', 'Eans1','E')">E</button>
+              <button onclick="hit('Ex1', 'Eans1','F')">F</button>
+              <button onclick="hit('Ex1', 'Eans1','G')">G</button>
+              <button onclick="hit('Ex1', 'Eans1','H')">H</button>
+              <button onclick="hit('Ex1', 'Eans1','I')">I</button>
+              <button onclick="hit('Ex1', 'Eans1','J')">J</button>
+              <button onclick="hit('Ex1', 'Eans1','K')">K</button>
+              <button onclick="hit('Ex1', 'Eans1','L')">L</button>
+              <button onclick="hit('Ex1', 'Eans1','M')">M</button>
+              <button onclick="hit('Ex1', 'Eans1','N')">N</button>
+              <button onclick="hit('Ex1', 'Eans1','O')">O</button>
+              <button onclick="hit('Ex1', 'Eans1','P')">P</button>
+              <button onclick="hit('Ex1', 'Eans1','Q')">Q</button>
+              <button onclick="hit('Ex1', 'Eans1','R')">R</button>
+              <button onclick="hit('Ex1', 'Eans1','S')">S</button>
+              <button onclick="hit('Ex1', 'Eans1','T')">T</button>
+              <button onclick="hit('Ex1', 'Eans1','U')">U</button>
+              <button onclick="hit('Ex1', 'Eans1','V')">V</button>
+              <button onclick="hit('Ex1', 'Eans1','W')">W</button>
+              <button onclick="hit('Ex1', 'Eans1','X')">X</button>
+              <button onclick="hit('Ex1', 'Eans1','Y')">Y</button>
+              <button onclick="hit('Ex1', 'Eans1','Z')">Z</button>
+        
+            </div><br>
+            <br>
+            </div>
+    
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid bg-2 text-center">
+                <br>
+                <br>
+              <h3>Q2.&nbsp;&nbsp;what is the capital of Haryana.</h3>
+              <p id="Eans2" hidden>CHANDIGARH</p>
+              <div id="E2">_ _ _ _ _ _ _ _ _ _</div><br><br>
+            <div>
+              <button onclick="hit('E2', 'Eans2','A')">A</button>
+              <button onclick="hit('E2', 'Eans2','B')">B</button>
+              <button onclick="hit('E2', 'Eans2','C')">C</button>
+              <button onclick="hit('E2', 'Eans2','D')">D</button>
+              <button onclick="hit('E2', 'Eans2','E')">E</button>
+              <button onclick="hit('E2', 'Eans2','F')">F</button>
+              <button onclick="hit('E2', 'Eans2','G')">G</button>
+              <button onclick="hit('E2', 'Eans2','H')">H</button>
+              <button onclick="hit('E2', 'Eans2','I')">I</button>
+              <button onclick="hit('E2', 'Eans2','J')">J</button>
+              <button onclick="hit('E2', 'Eans2','K')">K</button>
+              <button onclick="hit('E2', 'Eans2','L')">L</button>
+              <button onclick="hit('E2', 'Eans2','M')">M</button>
+              <button onclick="hit('E2', 'Eans2','N')">N</button>
+              <button onclick="hit('E2', 'Eans2','O')">O</button>
+              <button onclick="hit('E2', 'Eans2','P')">P</button>
+              <button onclick="hit('E2', 'Eans2','Q')">Q</button>
+              <button onclick="hit('E2', 'Eans2','R')">R</button>
+              <button onclick="hit('E2', 'Eans2','S')">S</button>
+              <button onclick="hit('E2', 'Eans2','T')">T</button>
+              <button onclick="hit('E2', 'Eans2','U')">U</button>
+              <button onclick="hit('E2', 'Eans2','V')">V</button>
+              <button onclick="hit('E2', 'Eans2','W')">W</button>
+              <button onclick="hit('E2', 'Eans2','X')">X</button>
+              <button onclick="hit('E2', 'Eans2','Y')">Y</button>
+              <button onclick="hit('E2', 'Eans2','Z')">Z</button>
+        
+            </div><br><br>
+            </div>        </div>
+          <div class="carousel-item">
+            <div class="container-fluid bg-2 text-center">
+                <br>
+                <br>
+              <h3>Q3.&nbsp;&nbsp;what is the capital of Bihar.</h3>
+              <p id="Eans3" hidden>PATNA</p>
+              <div id="E3">_ _ _ _ _</div><br><br>
+            <div>
+              <button onclick="hit('E3', 'Eans3','A')">A</button>
+              <button onclick="hit('E3', 'Eans3','B')">B</button>
+              <button onclick="hit('E3', 'Eans3','C')">C</button>
+              <button onclick="hit('E3', 'Eans3','D')">D</button>
+              <button onclick="hit('E3', 'Eans3','E')">E</button>
+              <button onclick="hit('E3', 'Eans3','F')">F</button>
+              <button onclick="hit('E3', 'Eans3','G')">G</button>
+              <button onclick="hit('E3', 'Eans3','H')">H</button>
+              <button onclick="hit('E3', 'Eans3','I')">I</button>
+              <button onclick="hit('E3', 'Eans3','J')">J</button>
+              <button onclick="hit('E3', 'Eans3','K')">K</button>
+              <button onclick="hit('E3', 'Eans3','L')">L</button>
+              <button onclick="hit('E3', 'Eans3','M')">M</button>
+              <button onclick="hit('E3', 'Eans3','N')">N</button>
+              <button onclick="hit('E3', 'Eans3','O')">O</button>
+              <button onclick="hit('E3', 'Eans3','P')">P</button>
+              <button onclick="hit('E3', 'Eans3','Q')">Q</button>
+              <button onclick="hit('E3', 'Eans3','R')">R</button>
+              <button onclick="hit('E3', 'Eans3','S')">S</button>
+              <button onclick="hit('E3', 'Eans3','T')">T</button>
+              <button onclick="hit('E3', 'Eans3','U')">U</button>
+              <button onclick="hit('E3', 'Eans3','V')">V</button>
+              <button onclick="hit('E3', 'Eans3','W')">W</button>
+              <button onclick="hit('E3', 'Eans3','X')">X</button>
+              <button onclick="hit('E3', 'Eans3','Y')">Y</button>
+              <button onclick="hit('E3', 'Eans3','Z')">Z</button>
+         </div><br><br>
+            </div>         </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <button class="btn btn-success quit" onclick="quit()">Submit</button> 
+      </div>
+ 
+
+
+    
+
   <script src="./index.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
