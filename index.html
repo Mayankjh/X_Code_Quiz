@@ -13,28 +13,8 @@
 </head>
 
 <body>
-  <!-- <div class="card text-center" id="info" style="visibility: visible;">
-    <div class="card-header">
-      Featured
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">Quiz Game Guess word</h5>
-      <p class="card-text">Dare to win!</p>
-      <input class="form-control" type="text" id="name" placeholder="Default input" required> <br>
-      <input class="form-control" type="text" id="age" placeholder="Default input" required><br>
-      <select id="level">
-        <option value="Easy">Easy</option>
-        <option value="Moderate">Moderate</option>
-        <option value="Expert">Expert</option> <br>
-       
-      </select> <br><br>
-      <a href="#" class="btn btn-primary" data-toggle="modal" onclick="start()" data-target="#exampleModal">START
-        GAME</a>
-    </div>
-    <div class="card-footer text-muted">
-    </div>
-  </div> -->
-  <!-- <div class="container-fluid" id="info" style="display: block;">
+
+   <div class="container-fluid" id="info" style="display: block;">
       <div class="row">
           <div class="col-12 p-0">
               <div class="jumbotron min-vh-100 text-center m-0 info d-flex flex-column justify-content-center">
@@ -58,7 +38,7 @@
               </div>
           </div>
       </div>
-  </div> -->
+  </div>
 
   <div class="container-fluid" id="quit" style="display: none;">
       <div class="row">
@@ -69,6 +49,7 @@
           </div>
       </div>
   </div>
+
   <div id="Easy" style="display:none;">
       <div class="jumbotron" style="background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);">
           <div class="container">
@@ -202,25 +183,26 @@
       </a>
       <button class="btn btn-success quit" onclick="quit()">Submit</button> 
     </div>
+    </div>
  
 
 <!-- **************** Moderate *************************** -->
-<div id="Moderate" style="display:block;">
+<div id="Moderate" style="display:none;">
     <div class="jumbotron" style="background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);">
         <div class="container">
-        <center><h1 >Hi,&nbsp;<a id="hi"></a><br><br>Welcome To Quiz</h1>
+        <center><h1 >Hi,&nbsp;<a id="hi1"></a><br><br>Welcome To Quiz</h1>
         </center>
         </div>
     </div>
-  <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
+  <div id="carouselExampleIndicatorsM" class="carousel slide" data-interval="false">
 <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="container-fluid bg-2 text-center">
           <br>
           <br>
-          <h3 class="margin">Q1.&nbsp;&nbsp;what is the capital of India.</h3>
-          <p id="mans1" hidden>DELHI</p>
-          <div id="M1">_ _ _ _ _</div><br><br>
+          <h3 class="margin">Q1.&nbsp;&nbsp;what is the capital of Chhattisgarh.</h3>
+          <p id="mans1" hidden>RAIPUR</p>
+          <div id="M1">_ _ _ _ _ _</div><br><br>
         <div>
           <button onclick="hit('M1', 'mans1','A')">A</button>
           <button onclick="hit('M1', 'mans1','B')">B</button>
@@ -258,9 +240,9 @@
         <div class="container-fluid bg-2 text-center">
             <br>
             <br>
-          <h3>Q2.&nbsp;&nbsp;what is the capital of Haryana.</h3>
-          <p id="mans2" hidden>CHANDIGARH</p>
-          <div id="M2">_ _ _ _ _ _ _ _ _ _</div><br><br>
+          <h3>Q2.&nbsp;&nbsp;what is the capital of Goa.</h3>
+          <p id="mans2" hidden>PANAJI</p>
+          <div id="M2">_ _ _ _ _ _</div><br><br>
         <div>
           <button onclick="hit('M2', 'mans2','A')">A</button>
           <button onclick="hit('M2', 'mans2','B')">B</button>
@@ -295,9 +277,9 @@
         <div class="container-fluid bg-2 text-center">
             <br>
             <br>
-          <h3>Q3.&nbsp;&nbsp;what is the capital of Bihar.</h3>
-          <p id="mans3" hidden>PATNA</p>
-          <div id="M3">_ _ _ _ _</div><br><br>
+          <h3>Q3.&nbsp;&nbsp;what is the capital of Jharkhand.</h3>
+          <p id="mans3" hidden>RANCHI</p>
+          <div id="M3">_ _ _ _ _ _</div><br><br>
         <div>
           <button onclick="hit('M3', 'mans3','A')">A</button>
           <button onclick="hit('M3', 'mans3','B')">B</button>
@@ -328,11 +310,11 @@
      </div><br><br>
         </div>         </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carouselExampleIndicatorsM" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carouselExampleIndicatorsM" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
@@ -346,19 +328,19 @@
     <div id="Expert" style="display:none;">
         <div class="jumbotron" style="background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);">
             <div class="container">
-            <center><h1 >Hi,&nbsp;<a id="hi"></a><br><br>Welcome To Quiz</h1>
+            <center><h1 >Hi,&nbsp;<a id="hi2"></a><br><br>Welcome To Quiz</h1>
             </center>
             </div>
         </div>
-      <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
+      <div id="carouselExampleIndicatorsE" class="carousel slide" data-interval="false">
   <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container-fluid bg-2 text-center">
               <br>
               <br>
-              <h3 class="margin">Q1.&nbsp;&nbsp;what is the capital of India.</h3>
-              <p id="Eans1" hidden>DELHI</p>
-              <div id="Ex1">_ _ _ _ _</div><br><br>
+              <h3 class="margin">Q1.&nbsp;&nbsp;what is the capital of Assam.</h3>
+              <p id="Eans1" hidden>DISPUR</p>
+              <div id="Ex1">_ _ _ _ _ _</div><br><br>
             <div>
               <button onclick="hit('Ex1', 'Eans1','A')">A</button>
               <button onclick="hit('Ex1', 'Eans1','B')">B</button>
@@ -396,8 +378,8 @@
             <div class="container-fluid bg-2 text-center">
                 <br>
                 <br>
-              <h3>Q2.&nbsp;&nbsp;what is the capital of Haryana.</h3>
-              <p id="Eans2" hidden>CHANDIGARH</p>
+              <h3>Q2.&nbsp;&nbsp;what is the capital of Arunachal Pradesh.</h3>
+              <p id="Eans2" hidden>ITANAGAR</p>
               <div id="E2">_ _ _ _ _ _ _ _ _ _</div><br><br>
             <div>
               <button onclick="hit('E2', 'Eans2','A')">A</button>
@@ -433,9 +415,9 @@
             <div class="container-fluid bg-2 text-center">
                 <br>
                 <br>
-              <h3>Q3.&nbsp;&nbsp;what is the capital of Bihar.</h3>
-              <p id="Eans3" hidden>PATNA</p>
-              <div id="E3">_ _ _ _ _</div><br><br>
+              <h3>Q3.&nbsp;&nbsp;what is the capital of Manipur.</h3>
+              <p id="Eans3" hidden>IMPHAL</p>
+              <div id="E3">_ _ _ _ _ _</div><br><br>
             <div>
               <button onclick="hit('E3', 'Eans3','A')">A</button>
               <button onclick="hit('E3', 'Eans3','B')">B</button>
@@ -466,11 +448,11 @@
          </div><br><br>
             </div>         </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselExampleIndicatorsE" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselExampleIndicatorsE" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -478,6 +460,7 @@
       </div>
  
 
+</div>
 
     
 

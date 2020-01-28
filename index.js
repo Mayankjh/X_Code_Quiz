@@ -30,9 +30,11 @@ function start(){
   var age = document.getElementById('age').value
   var level = document.getElementById('level').value;
   document.getElementById('hi').innerHTML=name;
+  document.getElementById('hi1').innerHTML=name;
+  document.getElementById('hi2').innerHTML=name;
   document.getElementById("info").style.display = "none";
   document.getElementById(`${level}`).style.display = "block";
-  console.log(document.getElementById(`${level}`).style.display)
+  console.log(document.getElementById(`${level}`).style.display);
 }
 
 
