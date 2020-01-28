@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="card text-center" id="info" style="visibility: visible;">
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Quiz Game Guess word</h5>
+      <p class="card-text">Dare to win!</p>
+      <input class="form-control" type="text" id="name" placeholder="Default input" required> <br>
+      <input class="form-control" type="text" id="age" placeholder="Default input" required><br>
+      <select id="level">
+        <option value="Easy">Easy</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Expert">Expert</option> <br>
+        <!-- <option value="audi">Audi</option> -->
+      </select> <br><br>
+      <a href="#" class="btn btn-primary" data-toggle="modal" onclick="start()" data-target="#exampleModal">START
+        GAME</a>
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+  </div>
+
+
+  <div id="Easy" style="display:none;">
+    <div>
+      <p>Q1.&nbsp;&nbsp;what is the capital of India.</p>
+      <p id="ans1" hidden>Delhi</p>
+      <div id="E1">_ _ _ _ _</div>
+    <div>
+      <button onclick="hit('E1', 'ans1','A')">A</button>
+      <button onclick="hit('E1', 'ans1','B')">B</button>
+      <button onclick="hit('E1', 'ans1','C`')">C</button>
+      <button onclick="hit('E1', 'ans1','D`')">D</button>
+      <button onclick="hit('E1', 'ans1','E')">E</button>
+      <button onclick="hit('E1', 'ans1','F')">F</button>
+      <button onclick="hit('E1', 'ans1','G')">G</button>
+      <button onclick="hit('E1', 'ans1','H')">H</button>
+      <button onclick="hit('E1', 'ans1','I')">I</button>
+      <button onclick="hit('E1', 'ans1','J')">J</button>
+      <button onclick="hit('E1', 'ans1','K')">K</button>
+      <button onclick="hit('E1', 'ans1','L')">L</button>
+      <button onclick="hit('E1', 'ans1','M')">M</button>
+      <button onclick="hit('E1', 'ans1','N')">N</button>
+      <button onclick="hit('E1', 'ans1','O')">O</button>
+      <button onclick="hit('E1', 'ans1','P')">P</button>
+      <button onclick="hit('E1', 'ans1','Q')">Q</button>
+      <button onclick="hit('E1', 'ans1','R')">R</button>
+      <button onclick="hit('E1', 'ans1','S')">S</button>
+      <button onclick="hit('E1', 'ans1','T')">T</button>
+      <button onclick="hit('E1', 'ans1','U')">U</button>
+      <button onclick="hit('E1', 'ans1','V')">V</button>
+      <button onclick="hit('E1', 'ans1','W')">W</button>
+      <button onclick="hit('E1', 'ans1','X')">X</button>
+      <button onclick="hit('E1', 'ans1','Y')">Y</button>
+      <button onclick="hit('E1', 'ans1','Z')">Z</button>
+
+    </div>
+    </div>
+    <div>
+      <p>Q2.&nbsp;&nbsp;what is the capital of India.</p>
+      <p id="ans1" hidden>Delhi</p>
+      <div></div>
+      
+    </div>
+    <div>
+      <p>Q3.&nbsp;&nbsp;what is the capital of India.</p>
+      <p id="ans1" hidden>Delhi</p>
+      <div></div>
+      
+    </div>
+  </div>
+  <div id="Moderate" style="display:none;">
+    <p>Q2.&nbsp;&nbsp;what is the capital of India.</p>
+    <p id="ans1" hidden>Delhi</p>
+    <div></div>
+
+  </div>
+  <div id="Expert" style="display:none;">
+    <p>Q3.&nbsp;&nbsp;what is the capital of India.</p>
+    <p id="ans1" hidden>Delhi</p>
+    <div></div>
+
+  </div>
+
+
+  <!-- Modal -->
+  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button onclick="hit('E1', 'ans1','A')" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button onclick="hit('E1', 'ans1','A')" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button onclick="hit('E1', 'ans1','A')" type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+  <!-- <input class="form-control" type="text" placeholder="Default input" required> -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
